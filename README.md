@@ -1,4 +1,5 @@
 # E-Wallet
 
 # Hello World! This was written by Bhushith
-# Hello World2! This was also written by Bhushith (just for practice)
+An E-Wallet can be used to manage your online finances, keep track of giftcards, cryptocurrency wallets, 
+stock shares, and other similar finances. 
