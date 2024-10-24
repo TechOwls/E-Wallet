@@ -1,0 +1,3 @@
+git rm file you wanna remove
+git commit -m "wtv"
+git push origin branch
