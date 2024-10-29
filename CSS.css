@@ -1,0 +1,55 @@
+/*CSS Selectors-> targets HTML elements to apply styles
+element{...} selects all instances with a specified element 
+.class{...} selects the elements with a specific class
+#id {...} selects the elements with a specific ID
+p { color: blue; }
+.container { padding: 20px; }
+#header { font-size: 24px; }
+*/
+
+/*Color and background
+color: sets the text color
+background-color: sets the background color
+background-image: sets a background image
+
+body { background-color: #f0f0f0; }
+h1 { color: #333; }
+.banner { background-image: url('banner.jpg'); }
+
+*/
+
+/*Font and text
+font-size: changes font size
+font-family: specifies the font style
+font-weight: adjusts the text weight aka bold, normal
+text-align: aligns the text within an element
+
+h1 { font-size: 36px; font-family: Arial, sans-serif; }
+p { text-align: justify; }*/
+
+
+
+/*margin and padding
+margin: adds space outside an element 
+padding: adds space inside an element
+
+.box { margin: 10px; padding: 20px; }*/
+
+/*
+borders and rounded corners 
+border: sets the border style, width, and color
+border-radius: rounds the conrers of elements
+
+.card { border: 2px solid #333; border-radius: 8px; }*/
+
+/*width, height and display:
+width: sets the width of an element
+height: sets the height of an element
+display: controls element display behavior
+
+img { width: 100%; height: auto; }
+.menu { display: flex; }*/
+
+
+
+
