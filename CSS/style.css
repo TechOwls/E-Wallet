@@ -1,0 +1,70 @@
+body
+{
+    background-color: rgb(122, 218, 213);
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+h1
+{
+    font-size: 75px;
+}
+.buttonAdd
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+/*
+.btnAddExpenses
+{
+    font-size: 20px;
+    color: red;
+    margin-right: 50px;
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+.btnAddIncome
+{
+    font-size: 20px;
+    color: blue;
+    margin-right: 50px; /*in case other divs(btns) need to be added*//*
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+*/
+
+button
+{
+    font-size: 20px;
+    margin-right: 50px; /*in case other divs(btns) need to be added*/
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.btnAddExpenses
+{
+    color: red;
+}
+
+.btnAddIncome
+{
+    color: blue;
+}
+
+.btnReturn
+{
+    color:green;
+}
