@@ -1,72 +1,66 @@
-# GitHub Commands List
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-## GIT basics
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-    git clone repo'sURL     This command will clone the remote repo to your local storage
-    git add .       This command will inititalize the push command
-    git commit -m "your message"        This is the second step of push command
-    git push --set-upstream origin branch       This will set the head of your local branch to the origin (use this first time)
-    git push        This is usual push command once the head is set
-    git fetch       This command will check for any changes is the head tracking branch and update the local repo
-    git branch branch_name      This command will create a new branch
-    git checkout branch_name    This command will take you to branch_Name repo
-    git branch                  This command will let you know where you are in the repo tree
-    git status                  This command will let you know the status of your current branch
-    git merge branch_Name       This command will add branch_Name to the current branch. After the merge you need to git commit and git push to update the remote repo.
+## About Laravel
 
-## Git
-    - Make sure you've installed git.
-    - Download VsCode and connect your git account.
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-## Making your own Branch
-    - Create a separate branch from the main branch so that you can work on the project yourself.
-    - This is so that you don't mess with the main branch before confirming/testing any of the changes.
-    - Create a new branch in your VsCode Terminal using->
-        - git checkout -b <new-branch-name>
-        - You can name it anything but try to name the branch with your name.
-    - Push the branch to remote->
-        - git push origin <your-branch-name>
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-## Pushing File(s) to the remote GitHub Repository
-    - First add all the files to the staging area.
-    - You can stage all your changes using this command->
-        - git add .
-    - Commit your changes using->
-        - git commit 
-            -- But if you wanna add a personalized message to keep track of changes use->
-        - git commit -m "Your commit message here"
-    - Finally, push all your files to the remote git repository->
-        - git push origin <your-branch-name>
-    - You can also push to other branches. But please make a pull request if you're going to do that so you don't mess
-      with the main project file(s).
-    - Pull Request(s)? Check the topic at the end!
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Verify your changes
-    - Make sure you've committed and pushed the files.
-    - You can use this command to do so->
-        - git status
+## Learning Laravel
 
-## Other Git Commands
-    - Check your current git branch using->
-        - git branch
-    - List all the remote branches->
-        - git branch -r
-    - Check another branch and the file(s) in that branch->
-        - git checkout <branch-name>
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-## Merging (Scary!!! Not so much don't worry)
-    - 1. Switch to the main branch.
-        - git checkout main
-    - 2. Pull from main- Update your main with any recent changes.
-        - git pull origin main
-    - 3. Merge your branch into main.
-        - git merge <your-branch-name>
-    - 4. Push the merged branch onto the remote repository.
-        - git push origin main
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-## Pull Request?
-    - A pull request is proposal to merge a set of changes from one branch into another.
-    - You can create a pull request, which you can do from the github website. 
-    - Collaborators and your team members discuss the changes and verify your code before merging the two branches.
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Feel free to add any other details you want to in this file!
+## Laravel Sponsors
+
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+
+### Premium Partners
+
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
+
+## Contributing
+
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+
+## Code of Conduct
+
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
