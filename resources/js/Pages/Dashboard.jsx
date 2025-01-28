@@ -1,5 +1,5 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
-import { Head } from "@inertiajs/react";
+import { Head, Link } from "@inertiajs/react";
 import React from "react";
 
 export default function Dashboard() {
@@ -22,9 +22,12 @@ export default function Dashboard() {
                             Use the button bellow to navigate to spendings form.
                         </p>
                     </div>
-                    <button className="p-3 m-5 bg-gradient-to-r from-[#00000095] to-blue-500 hover:bg-gradient-to-r hover:from-[#ffffff85] hover:to-blue-800 rounded-md">
-                        Enter new spending
-                    </button>
+
+                    <a href={route("spending.addForm")}>
+                        <button className="p-3 m-5 bg-gradient-to-r from-[#00000095] to-blue-500 hover:bg-gradient-to-r hover:from-[#ffffff85] hover:to-blue-800 rounded-md">
+                            Enter new spending
+                        </button>
+                    </a>
                 </div>
             </div>
         </AuthenticatedLayout>
