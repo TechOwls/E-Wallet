@@ -11,4 +11,9 @@ class ViewController extends Controller
     {
         return Inertia::render('Spending/Forms/Create');
     }
+
+    public function editSpending()
+    {
+        return Inertia::render('Spending/Forms/Edit');
+    }
 }

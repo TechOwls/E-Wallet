@@ -20,7 +20,6 @@ class SpendingController extends Controller
     public function postNewSpending(Request $request)
     {
         $userID = Auth::id();
-        // $request->amount = (double)$request->amount;
         $request->validate([
             'amount'=>'required|numeric',
             'description' => 'nullable|string|max:255',
@@ -32,15 +31,23 @@ class SpendingController extends Controller
             'description' => $request->description,
             'entered_on' => $time,
             ]);
-
-        return response()->json([
-            'status' => 'success',
-            'message' => 'saved successfully'
-        ]);
     }
 
-    public function editSpending($spendingID)
+    public function editSpending(Request $request)
     {
+        $request->validate([
+            'amount' => 'required|numeric',
+            'description' => 'nullable|string|max:255',
+        ]);
+        $time = now()->format('Y-m-d H:i:s');
+        $userID = Auth::id();
+        $spendings = Spendings::findOrFail($request->id);
+        $spendings->update([
+            'userID' => $userID,
+            'amount' => $request->amount,
+            'description' => $request->description,
+            'entered_on' => $time,
+        ]);
     }
 
     public function deleteSpending($spendingID)

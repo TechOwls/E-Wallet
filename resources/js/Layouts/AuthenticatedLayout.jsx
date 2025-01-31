@@ -202,7 +202,7 @@ export default function AuthenticatedLayout({ header, children }) {
             <main className="top-20 bottom-0 absolute">
                 <img src={imageSrc} alt="Dynamic Scenery" />
                 {componentsVisible && (
-                    <div className={`z-10 w-[100%] absolute bottom-[45%]`}>
+                    <div className="z-10 w-[100%] absolute top-[25%]">
                         {children}
                     </div>
                 )}
