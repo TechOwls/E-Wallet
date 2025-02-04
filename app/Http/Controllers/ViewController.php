@@ -7,7 +7,7 @@ use Inertia\Inertia;
 
 class ViewController extends Controller
 {
-    public function newSpeninding()
+    public function newSpending()
     {
         return Inertia::render('Spending/Forms/Create');
     }
@@ -15,5 +15,10 @@ class ViewController extends Controller
     public function editSpending()
     {
         return Inertia::render('Spending/Forms/Edit');
+    }
+
+    public function getSpendings()
+    {
+        return Inertia::render('Spending/Layout/MiniLayout/List');
     }
 }

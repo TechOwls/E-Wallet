@@ -25,9 +25,9 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
-
+    Route::get('spendings/get/my_Spendings', [ViewController::class, 'getSpendings'])->name('spendings.list');
     Route::get('/spendings/get', [SpendingController::class, 'getSpendings'])->name('spendings.get');
-    Route::get('/spendings/new/spending', [ViewController::class, 'newSpeninding'])->name('spending.addForm');
+    Route::get('/spendings/new/spending', [ViewController::class, 'newSpending'])->name('spendings.addForm');
     Route::post('/spendings/add', [SpendingController::class, 'postNewSpending'])->name('spendings.add');
     Route::post('spendings/edit/{spendingsID}', [SpendingController::class, 'editSpending'])->name('spendings.edit');
     Route::delete('/spendings/delete/{spendingsID}', [SpendingController::class, 'deleteSpending'])->name('spendings.delete');

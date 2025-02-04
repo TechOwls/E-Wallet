@@ -23,9 +23,15 @@ export default function Dashboard() {
                         </p>
                     </div>
 
-                    <a href={route("spending.addForm")}>
+                    <a href={route("spendings.addForm")}>
                         <button className="p-3 m-5 bg-gradient-to-r from-[#00000095] to-blue-500 hover:bg-gradient-to-r hover:from-[#ffffff85] hover:to-blue-800 rounded-md">
                             Enter new spending
+                        </button>
+                    </a>
+
+                    <a href={route("spendings.list")}>
+                        <button className="p-3 m-5 bg-gradient-to-r from-[#00000095] to-blue-500 hover:bg-gradient-to-r hover:from-[#ffffff85] hover:to-blue-800 rounded-md">
+                            Look at my spendings
                         </button>
                     </a>
                 </div>

@@ -14,7 +14,7 @@ class SpendingController extends Controller
         $userID = Auth::id();
         $spendings = Spendings::where('userID', $userID)
         ->get();
-        return response()->json($spendings);
+        return response()->json(['spendings' => $spendings]);
     }
 
     public function postNewSpending(Request $request)
