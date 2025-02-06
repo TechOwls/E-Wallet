@@ -14,11 +14,25 @@ const List = () => {
         setSpendings(response.data.spendings);
     };
 
-    return (
-        <AuthenticatedLayout>
-            <div className="w-full bg-[#00000085]"></div>
-        </AuthenticatedLayout>
-    );
+    return <AuthenticatedLayout></AuthenticatedLayout>;
 };
 
 export default List;
+
+/*
+<div className=" text-white">
+                        <p>Your spendings</p>
+                        {spendings.length > 0 ? (
+                            spendings.map((spending) => (
+                                <div className="inline p-5" key={spending.id}>
+                                    <div>{spending.description}</div>
+                                    <div>{spending.amount}</div>
+                                </div>
+                            ))
+                        ) : (
+                            <div>
+                                <p>No records</p>
+                            </div>
+                        )}
+                    </div>
+*/
